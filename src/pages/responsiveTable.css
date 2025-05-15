@@ -1,0 +1,149 @@
+.stock-container,
+.merchant-container,
+.category-container {
+  overflow-x: hidden !important;
+}
+.product-group-table,
+.category_table,
+.merchant_table,
+.stock_table {
+  min-width: 0px !important;
+}
+.header-title {
+  cursor: pointer;
+}
+@media only screen and (max-width: 760px),
+  (min-device-width: 761px) and (max-device-width: 1024px) {
+  .stock_table,
+  .merchant_table,
+  .category_table,
+  .product-group-table {
+    display: block !important;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .responsive-content {
+    padding: 1rem 0px;
+  }
+
+  tr:nth-child(odd) {
+    background: #fff;
+  }
+
+  .responsive-content {
+    border: none;
+    border-bottom: 1px solid #eee !important;
+    position: relative;
+    padding-left: 50% !important;
+  }
+
+  .responsive-content:before {
+    position: absolute;
+    left: 15px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /* category table lables */
+  .category_table .responsive-content:nth-of-type(1):before {
+    content: "Name";
+  }
+  .category_table .responsive-content:nth-of-type(2):before {
+    content: "Image";
+  }
+  .category_table .responsive-content:nth-of-type(3):before {
+    content: "Actions";
+  }
+
+  /* stock table lables */
+  .stock_table .responsive-content:nth-of-type(1):before {
+    content: "Name";
+  }
+  .stock_table .responsive-content:nth-of-type(2):before {
+    content: "Logo";
+  }
+  .stock_table .responsive-content:nth-of-type(3):before {
+    content: "Description";
+  }
+  .stock_table .responsive-content:nth-of-type(4):before {
+    content: "Group";
+  }
+  .stock_table .responsive-content:nth-of-type(5):before {
+    content: "Price";
+  }
+  .stock_table .responsive-content:nth-of-type(6):before {
+    content: "Quantity";
+  }
+  .stock_table .responsive-content:nth-of-type(7):before {
+    content: "Published";
+  }
+  .stock_table .responsive-content:nth-of-type(8):before {
+    content: "Featured";
+  }
+  .stock_table .responsive-content:nth-of-type(9):before {
+    content: "Image";
+  }
+  .stock_table .responsive-content:nth-of-type(10):before {
+    content: "";
+  }
+
+  /* merchant table labes */
+
+  .merchant-icon,
+  .stock-icons {
+    justify-content: flex-start !important;
+  }
+  .stock-image,
+  .merchant-image {
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  .merchant_table .responsive-content:nth-of-type(1):before {
+    content: "Name";
+  }
+  .merchant_table .responsive-content:nth-of-type(2):before {
+    content: "Logo";
+  }
+  .merchant_table .responsive-content:nth-of-type(3):before {
+    content: "Description";
+  }
+  .merchant_table .responsive-content:nth-of-type(4):before {
+    content: "Category";
+  }
+  .merchant_table .responsive-content:nth-of-type(5):before {
+    content: "Address";
+  }
+  .merchant_table .responsive-content:nth-of-type(6):before {
+    content: "Contact Number";
+  }
+  .merchant_table .responsive-content:nth-of-type(7):before {
+    content: "Contact Mail";
+  }
+  .merchant_table .responsive-content:nth-of-type(8):before {
+    content: "Image";
+  }
+  .merchant_table .responsive-content:nth-of-type(9):before {
+    content: "";
+  }
+
+  /* product group table */
+  .product-group-table .responsive-content:nth-of-type(1):before {
+    content: "Name";
+  }
+  .product-group-table .responsive-content:nth-of-type(2):before {
+    content: "";
+  }
+}
+
+@media (max-width: 759px) {
+  .productgroup-title,
+  .category-title {
+    font-size: 2rem !important;
+  }
+}
